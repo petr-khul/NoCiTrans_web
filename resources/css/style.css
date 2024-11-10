@@ -168,7 +168,7 @@ header{
 /* ----- main section ------- */
 
 .about {
-    margin: 2rem;
+    margin: 1rem 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -188,7 +188,7 @@ header{
     margin-left: 5%;
     white-space: normal;
     word-break: keep-all;
-    width: 30%;
+    width: 35%;
     height: auto;
     max-height: 90%;
     padding: 1rem;
@@ -202,7 +202,7 @@ header{
 }
 
 .info-content h1{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     white-space: normal;
     font-weight: 900;
 }
@@ -219,3 +219,94 @@ header{
     }
 }
 
+/* ------------- vehicles -----*/
+.vehicles {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vehicles h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color:#ebff00;
+    font-size: 2rem;
+}
+
+.vehicles-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 2rem;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+}
+
+.vehicles-container h3{
+    text-transform: uppercase;
+    color:#ebff00;
+    font-size: 1.75rem;
+}
+
+.vehicles-container ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vehicles-container ul li {
+    list-style-type: none;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0.3rem 0;
+    width: auto;
+}
+
+.vehicle {
+    width: 25%;
+    min-width: 370px;
+    height: 300px;;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#tahac {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("../images/tahac.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plachta {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("../images/skrin.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dodavka {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("../images/dodavka.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#naves {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("../images/naves.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
