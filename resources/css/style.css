@@ -414,17 +414,36 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    opacity: 0.9;
 }
 
 .left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1rem 2rem;
+    margin: 0.5rem 2rem;
 }
 
 .right {
     display: flex;
     justify-content: flex-end;
-    margin: 1rem 2rem;
+    margin: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 1250px){
+    .footer-page {
+        margin-top: 4rem;
+        background-color: #ebff00;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+    }
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 2rem;
+    }
 }
