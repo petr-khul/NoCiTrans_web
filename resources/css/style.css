@@ -331,9 +331,9 @@ header{
 
 .map {
     width: 90%;
-    height: 90%;
+    height: auto;
     position: relative;
-    margin: 0 2rem;
+    margin: 2rem 2rem;
 }
 
 .map iframe {
@@ -375,4 +375,15 @@ header{
 .contacts li {
     list-style-type: none;
     margin: 0.3rem 0;
+}
+
+@media screen and (max-width: 1250px){
+    .contacts-frame {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .map iframe {
+        height: 300px; 
+    }
 }
