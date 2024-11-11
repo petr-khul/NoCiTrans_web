@@ -18,7 +18,7 @@ h2 {
 h3 {
     text-transform: uppercase;
     color:#ebff00;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 }
 
 /* ----- header section ------- */
@@ -102,6 +102,7 @@ header{
 
 .contacts-header img{
     margin-right: 4px;
+    height: 1rem;
 }
 
 @media screen and (max-width: 1250px){
@@ -337,7 +338,6 @@ header{
 }
 
 .map iframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -377,13 +377,54 @@ header{
     margin: 0.3rem 0;
 }
 
+.contacts a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 1250px){
     .contacts-frame {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         }
     
     .map iframe {
         height: 300px; 
     }
+}
+
+.job {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.job p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-page {
+    margin-top: 4rem;
+    background-color: #ebff00;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem;
 }
