@@ -7,6 +7,20 @@ body {
     color: white;
     font-size: 16px;
 }
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color:#ebff00;
+    font-size: 2rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    color:#ebff00;
+    font-size: 1.75rem;
+}
+
 /* ----- header section ------- */
 header{
     display: flex;
@@ -65,11 +79,12 @@ header{
 }
 
 .contacts-header li {
-    margin: 8px;
+    margin: 0.8rem;
     font-size: 1rem;
     text-decoration: none;
     text-wrap: nowrap;
     text-align: center;
+    font-weight: 800;
 }
 
 .contacts-header a {
@@ -77,6 +92,7 @@ header{
     text-decoration: none;
     font-size: 1rem;
     color:#ebff00;
+    font-weight: 800;
 }
 
 .contacts-header a:hover {
@@ -157,14 +173,16 @@ header{
 
     .contacts-header li {
         text-align: center;
-        font-size: 0.75rem
+        font-size: 0.75rem;
+        margin: 0.3rem;
     }
 
     .contacts-header li a {
         text-align: center;
-        font-size: 0.75rem
+        font-size: 0.75rem;
     }
 }
+
 /* ----- main section ------- */
 
 .about {
@@ -214,8 +232,9 @@ header{
 
 @media screen and (max-width: 768px){
     .info-content {
-        width: 60%;
+        width: 70%;
         height: auto;
+        font-size: .9rem;
     }
 }
 
@@ -226,12 +245,6 @@ header{
     justify-content: center;
 }
 
-.vehicles h2 {
-    text-transform: uppercase;
-    text-align: center;
-    color:#ebff00;
-    font-size: 2rem;
-}
 
 .vehicles-container {
     display: flex;
@@ -240,12 +253,6 @@ header{
     margin: 0 2rem;
     flex-wrap: wrap;
     gap: 1rem 0;
-}
-
-.vehicles-container h3{
-    text-transform: uppercase;
-    color:#ebff00;
-    font-size: 1.75rem;
 }
 
 .vehicles-container ul {
@@ -309,4 +316,63 @@ header{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* ---------- contacts ----------*/
+
+.contacts-section {
+    margin-top: 2rem;
+}
+
+.contacts-frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contacts {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 380px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contacts h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.contacts strong {
+    font-size: 1.1rem;
+}
+
+.contacts li {
+    list-style-type: none;
+    margin: 0.3rem 0;
 }
